@@ -12,7 +12,7 @@
     {
         "id": "javascript",
         "name": "JavaScript",
-        "category": "Programming Language",
+        "category": "Language",
         "description": "A versatile programming language used to create interactive and dynamic web applications.",
         "icon": "https://cdn.simpleicons.org/javascript",
         "rating": 4.9,
@@ -22,7 +22,7 @@
     {
         "id": "typescript",
         "name": "TypeScript",
-        "category": "Programming Language",
+        "category": "Language",
         "description": "A strongly typed programming language that builds on JavaScript for scalable applications.",
         "icon": "https://cdn.simpleicons.org/typescript",
         "rating": 4.8,

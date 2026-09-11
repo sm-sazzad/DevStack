@@ -4,9 +4,9 @@ import logo from "../assets/logo-text.png"
 
 const Navbar = () => {
     return (
-        <div className="border-b border-gray-300 sticky top-0 bg-[white]">
+        <div className="border-b border-gray-300 sticky top-0 bg-white/99 z-50">
             <nav className="flex justify-between gap-1 lg:w-[90%] mx-auto py-3 px-3 md:px-5 items-center">
-                <RxHamburgerMenu className="lg:hidden block text-[20px]" />
+                <RxHamburgerMenu className="lg:hidden block text-[20px] font-bold cursor-pointer" />
                 <div>
                     <img src={logo} alt="" className="cursor-pointer " />
                 </div>
