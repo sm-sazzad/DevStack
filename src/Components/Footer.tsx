@@ -38,9 +38,9 @@ const Footer = () => {
                     </ul>
                 </div>
             </footer>
-            <div className="flex justify-between mx-24 my-10 text-lg text-[#64748B]">
+            <div className="md:flex text-center justify-between mx-3 md:mx-24 my-10 text-lg text-[#64748B]">
                 <span className="">© 2026 Dev Stack. All rights reserved.</span>
-                <ul className="flex gap-4">
+                <ul className="flex gap-4 justify-center md:justify-start">
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms</a></li>
                 </ul>
