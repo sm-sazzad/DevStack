@@ -19,7 +19,7 @@ const Technologies = ({ TechnologyPromise }: TechnologyPromiseProps) => {
 
     const handelRemoveAllButton = () => {
         setSelected([]);
-        toast.success(`Removed All from your stack`, {
+        toast.success(`Removed All item from your Stack`, {
             position: "bottom-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -35,14 +35,8 @@ const Technologies = ({ TechnologyPromise }: TechnologyPromiseProps) => {
     const handelRemoveButton = (selectedTec: ITechnologyType) => {
         const remainTechnologies = selected.filter(remove => remove.name !== selectedTec.name);
         setSelected(remainTechnologies);
-        toast.success(`${selectedTec.name} removed from your stack`, {
+        toast.success(`${selectedTec.name} removed from your Stack`, {
             position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
             theme: "light",
             transition: Bounce,
         })
@@ -53,7 +47,7 @@ const Technologies = ({ TechnologyPromise }: TechnologyPromiseProps) => {
     return (
         <div className="w-[90%] mx-auto">
             <div className="text-center mt-10 lg:mt-2 lg:text-start">
-                <h1 className="text-5xl font-bold ">Explore the <span className="text-[#D81B7E]">Technologies</span></h1>
+                <h1 className="text-5xl font-bold ">Explore the <span className="text-[#7C3AED]">Technologies</span></h1>
                 <p className="text-lg py-6 text-[#64748B]">Pick one technology per category to build your ideal stack.</p>
             </div>
 
@@ -88,9 +82,15 @@ const Technologies = ({ TechnologyPromise }: TechnologyPromiseProps) => {
                                 </div>
                             )
                         )}
-                        <button
-                            onClick={() => handelRemoveAllButton()}
-                            className="w-full mt-6 py-2 bg-black text-white font-semibold rounded-xl cursor-pointer">Remove All</button>
+                        {
+                            selected.length !== 0 ? (
+                                <button
+                                    onClick={() => handelRemoveAllButton()}
+                                    className="w-full mt-6 py-2 bg-black text-white font-semibold rounded-xl cursor-pointer">
+                                    Remove All
+                                </button>
+                            ) : ' '
+                        }
                     </div>
                 </div>
             </div>
