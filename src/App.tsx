@@ -22,7 +22,7 @@ function App() {
       <ToastContainer />
       <Navbar />
       <HeroSection />
-      <Suspense fallback={<h1>Loading Technology Data</h1>}>
+      <Suspense fallback={<h1 className='text-center text-xl'>Loading Technology Data...</h1>}>
         <Technologies TechnologyPromise={TechnologyPromise} />
       </Suspense>
       <Footer />

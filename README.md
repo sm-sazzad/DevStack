@@ -9,9 +9,11 @@
 * HTML
 * Tailwind Css, Daisyui
 * TypeScript
+* React
 * React-Toastify (NPM Package)
 * JSON (for technology data)
 * Vite (build tool)
+* Netlify (Deployment)
 
 ## ✨ Features
 
@@ -23,7 +25,7 @@
 
 ## 🔗 Live Link
 
-**[DevStack](https://devstack-sm-sazzad.netlify.app/)**
+### **[DevStack](https://devstack-sm-sazzad.netlify.app/)**
 
 ## ⚛️ React Questions & Answers
 
